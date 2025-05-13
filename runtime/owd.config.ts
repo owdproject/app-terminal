@@ -9,7 +9,7 @@ export default {
     icon: "mdi:console",
     windows: {
         main: {
-            component: () => import('./runtime/components/Window/WindowTerminal.vue'),
+            component: () => import('./components/Window/WindowTerminal.vue'),
             size: {
                 width: 600,
                 height: 400
