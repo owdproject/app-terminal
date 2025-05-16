@@ -3,7 +3,7 @@
 </p>
 <h1 align="center">Terminal</h1>
 <h3 align="center">
-  Terminal App for your Open Web Desktop client.
+  Terminal App for Open Web Desktop.
 </h3>
 
 ## Overview
@@ -12,28 +12,22 @@ This app for Open Web Desktop is a basic terminal to interact with other apps.
 
 ## Installation
 
-1.  Navigate to your client folder in your terminal:
+```bash
+nx run desktop:install-app --name=@owdproject/app-terminal
+```
 
-    ```bash
-    cd owd-client
-    ```
+## Installation
 
-2.  Install the desktop module using npm or yarn:
+## Usage
 
-    ```bash
-    npm install @owdproject/app-terminal
-    ```
+#### Available configuration
 
-3.  Register the application in your desktop configuration file:
-
-    ```typescript
-    // owd.config.ts
-    export default defineDesktopConfig({
-        apps: [
-            '@owdproject/app-terminal',
-        ]
-    })
-    ```
+```json
+{
+  "welcomeMessage": "Welcome to Open Web Desktop",
+  "prompt": "$"
+}
+```
 
 ## License
 
