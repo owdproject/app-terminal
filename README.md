@@ -22,10 +22,14 @@ nx run desktop:install-app --name=@owdproject/app-terminal
 
 #### Available configuration
 
+You could set this configuration in `/desktop/owd.config.ts`:
+
 ```json
-{
-  "welcomeMessage": "Welcome to Open Web Desktop",
-  "prompt": "$"
+terminal: {
+  {
+    welcomeMessage: "Welcome to Open Web Desktop",
+    prompt: "$"
+  }
 }
 ```
 
