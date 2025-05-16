@@ -8,14 +8,15 @@ import {onMounted, onBeforeUnmount} from "vue"
 const appConfig = useAppConfig()
 const terminalManager = useTerminalManager()
 
-const commandHandler = (text) => {
-  let response;
-  let argsIndex = text.indexOf(' ');
-  let command = argsIndex !== -1 ? text.substring(0, argsIndex) : text;
+const commandHandler = async (text) => {
+  const response = await terminalManager.execCommand(text).catch((e) => {
+    console.error(e)
+    return
+  })
 
-  terminalManager.execCommand(command)
-
-  TerminalService.emit('response', response);
+  if (response && response.message) {
+    TerminalService.emit('response', response.message);
+  }
 }
 
 onMounted(() => {
