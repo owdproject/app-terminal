@@ -6,6 +6,8 @@
   Terminal App for Open Web Desktop.
 </h3>
 
+<br />
+
 ## Overview
 
 This app for Open Web Desktop is a basic terminal to interact with other apps.
