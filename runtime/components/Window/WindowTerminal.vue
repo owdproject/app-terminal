@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import Terminal from 'primevue/terminal';
+import Terminal from 'primevue/terminal'
 import TerminalService from 'primevue/terminalservice'
-import {useTerminalManager} from "@owdproject/core/runtime/composables/useTerminalManager";
-import {useAppConfig} from "nuxt/app";
-import {onMounted, onBeforeUnmount} from "vue"
+import { useTerminalManager } from '@owdproject/core/runtime/composables/useTerminalManager'
+import { useAppConfig } from 'nuxt/app'
+import { onMounted, onBeforeUnmount } from 'vue'
 
 const appConfig = useAppConfig()
 const terminalManager = useTerminalManager()
@@ -15,25 +15,25 @@ const commandHandler = async (text) => {
   })
 
   if (response && response.message) {
-    TerminalService.emit('response', response.message);
+    TerminalService.emit('response', response.message)
   }
 }
 
 onMounted(() => {
-  TerminalService.on('command', commandHandler);
+  TerminalService.on('command', commandHandler)
 })
 
 onBeforeUnmount(() => {
-  TerminalService.off('command', commandHandler);
+  TerminalService.off('command', commandHandler)
 })
 </script>
 
 <template>
   <Window>
     <Terminal
-        :welcomeMessage="appConfig.terminal.welcomeMessage"
-        :prompt="appConfig.terminal.prompt"
-        aria-label="Terminal"
+      :welcomeMessage="appConfig.terminal.welcomeMessage"
+      :prompt="appConfig.terminal.prompt"
+      aria-label="Terminal"
     />
   </Window>
 </template>
