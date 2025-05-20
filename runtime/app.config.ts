@@ -4,7 +4,7 @@ export default {
   category: 'tools',
   provides: {
     name: 'terminal',
-    entry: 'terminal',
+    command: 'terminal',
   },
   icon: 'mdi:console',
   windows: {
