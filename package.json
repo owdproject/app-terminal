@@ -1,6 +1,6 @@
 {
   "name": "@owdproject/app-terminal",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Terminal App for your Open Web Desktop client",
   "keywords": [
     "owd-client",
@@ -14,6 +14,6 @@
     "url": "https://github.com/owdproject"
   },
   "peerDependencies": {
-    "@owdproject/core": "^3.1.0"
+    "@owdproject/core": "^3.1.4"
   }
 }
