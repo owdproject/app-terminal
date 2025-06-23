@@ -13,7 +13,7 @@ export default defineNuxtModule({
   },
   defaults(nuxt) {
     return {
-      welcomeMessage: `Welcome to Open Web Desktop!\nVersion: ${nuxt.options.runtimeConfig.public.coreVersion} - owdproject.org\n\nTo get started, try using the 'help' command\n\n`,
+      welcomeMessage: `Welcome to Open Web Desktop!\nVersion: ${nuxt.options.runtimeConfig.public.desktop.coreVersion} - owdproject.org\n\nTo get started, try using the 'help' command\n\n`,
       prompt: 'owd$ ',
     }
   },
