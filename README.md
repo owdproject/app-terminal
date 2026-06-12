@@ -15,7 +15,7 @@ This app for Open Web Desktop is a basic terminal to interact with other apps.
 ## Installation
 
 ```bash
-owd install-app @owdproject/app-terminal
+pnpm desktop add @owdproject/app-terminal
 ```
 
 ## Installation
@@ -24,7 +24,7 @@ owd install-app @owdproject/app-terminal
 
 #### Available configuration
 
-You could set this configuration in `/desktop/owd.config.ts`:
+You could set this configuration in `/desktop/desktop.config.ts`:
 
 ```json
 terminal: {

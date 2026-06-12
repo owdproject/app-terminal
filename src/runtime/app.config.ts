@@ -1,6 +1,7 @@
 export default {
   id: 'org.owdproject.terminal',
   title: 'Terminal',
+  singleton: false,
   category: 'tools',
   provides: {
     name: 'terminal',
@@ -24,6 +25,11 @@ export default {
   entries: {
     terminal: {
       command: 'terminal',
+    },
+  },
+  terminal: {
+    terminal: {
+      description: 'Open a new Terminal window',
     },
   },
   commands: {
