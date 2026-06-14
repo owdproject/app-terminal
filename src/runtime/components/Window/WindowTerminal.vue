@@ -30,13 +30,13 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <Window>
+  <DesktopWindow>
     <Terminal
       :welcomeMessage="terminal?.welcomeMessage"
       :prompt="terminal?.prompt"
       aria-label="Terminal"
     />
-  </Window>
+  </DesktopWindow>
 </template>
 
 <style scoped lang="scss">
