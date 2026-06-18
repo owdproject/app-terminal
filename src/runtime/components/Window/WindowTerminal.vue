@@ -51,7 +51,8 @@ onBeforeUnmount(() => {
   height: 100%;
   box-sizing: border-box;
 
-  :deep(.p-terminal-input) {
+  :deep(.p-terminal-input),
+  :deep(.p-terminal-prompt-value) {
     font-family: inherit !important;
     font-size: inherit !important;
     line-height: inherit !important;
